@@ -1,5 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let [index_1, value_1] of Object.entries(array)) {
+    console.log();
+    for (let [index_2, value_2] of Object.entries(array)) {
+      if (value_1 + value_2 === target && index_1 !== index_2) {
+        return true;
+      }
+    }
+  }
+  return false;
+
 }
 
 /* 
